@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d16">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Cómo utiliza Megalodon los datos de Google Drive y cómo revocar el acceso de la aplicación.">
+  <title>Política de privacidad · Megalodon</title>
+  <link rel="icon" href="assets/megalodon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="header wrap">
+    <a class="brand" href="./" aria-label="Megalodon, inicio"><img src="assets/megalodon.png" width="42" height="42" alt=""><span>Megalodon</span></a>
+    <nav aria-label="Navegación"><a href="./">Volver al inicio <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="contenido" class="wrap policy">
+    <header class="policy-heading"><p class="eyebrow">Tus datos</p><h1>Política de<br><span>privacidad.</span></h1><p class="updated">Última actualización: <time datetime="2026-09-27">27 de septiembre de 2026</time></p><p class="lead">Esta política describe el uso de datos por Megalodon, su conexión con Google Drive y este sitio informativo.</p></header>
+    <div class="policy-body">
+      <section aria-labelledby="responsable"><h2 id="responsable">1. Aplicación y contacto</h2><p>Megalodon es un proyecto de uso personal que permite organizar y reproducir una biblioteca multimedia propia mediante una instalación privada de Jellyfin. El administrador de esa instalación controla su configuración y sus datos.</p><p>Contacto del responsable del proyecto: <a href="mailto:antonyoandrei@gmail.com">antonyoandrei@gmail.com</a>.</p></section>
+      <section aria-labelledby="acceso"><h2 id="acceso">2. Acceso a Google Drive</h2><p>La conexión se realiza mediante rclone y la autorización OAuth de Google. La contraseña de Google se introduce en Google; Megalodon no la solicita ni la almacena.</p><p>Se utiliza el permiso <code>https://www.googleapis.com/auth/drive.readonly</code>. Este permiso permite listar y leer metadatos y contenido de archivos de la cuenta autorizada. La configuración de la biblioteca selecciona las carpetas utilizadas; esa selección no reduce por sí misma el alcance del permiso OAuth.</p><p>Los datos tratados pueden incluir nombres, identificadores, rutas, tamaños, fechas y contenido de los archivos multimedia y sus subtítulos. El permiso de lectura no permite subir, modificar ni eliminar archivos de Drive.</p></section>
+      <section aria-labelledby="uso"><h2 id="uso">3. Para qué se utilizan los datos</h2><p>Los datos se utilizan para localizar los archivos de la biblioteca, obtener la información necesaria para su organización y reproducir el contenido solicitado por el usuario. Jellyfin mantiene además los perfiles, las preferencias y el progreso de reproducción de la instalación.</p><p>Los datos de Google no se venden, no se utilizan para publicidad ni para entrenar modelos de inteligencia artificial. Su uso se limita a las funciones descritas, de acuerdo con la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario de los Servicios de API de Google</a>, incluidos sus requisitos de Uso Limitado.</p></section>
+      <section aria-labelledby="almacenamiento"><h2 id="almacenamiento">4. Dónde se almacenan</h2><p>Los originales permanecen en Google Drive. rclone puede guardar una caché de los datos leídos en el disco del equipo que ejecuta la instalación. Jellyfin y Megalodon guardan localmente su configuración, metadatos, avatares y estado de reproducción.</p><p>Los tokens de autorización de Google se guardan en la configuración local de rclone para mantener el acceso autorizado. No se publican en este sitio informativo. Las sesiones de Megalodon se mantienen mediante cookies de autenticación en el navegador de la instalación privada.</p><p>La caché se conserva conforme a su configuración de limpieza. La configuración, los tokens y los datos de la biblioteca se conservan hasta que el usuario los elimina o restablece; revocar un permiso no borra automáticamente las copias locales existentes.</p></section>
+      <section aria-labelledby="terceros"><h2 id="terceros">5. Comunicaciones y servicios externos</h2><p>La lectura de Drive requiere comunicación con Google. El contenido pasa por la instalación privada y se entrega al navegador o receptor que el usuario selecciona, por ejemplo al reproducir en una televisión. No se publica una biblioteca accesible para cualquiera a través de esta web.</p><p>Si el usuario activa proveedores de metadatos en Jellyfin, estos pueden recibir consultas de búsqueda sobre los títulos, según la configuración de Jellyfin. Esa función es independiente del acceso OAuth a Drive.</p><p>Este sitio informativo se aloja en GitHub Pages. No incorpora analítica, publicidad, formularios ni cookies propias. GitHub puede registrar datos técnicos de las visitas, como la dirección IP, para operar y proteger el alojamiento, conforme a su <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">política de privacidad</a>.</p></section>
+      <section aria-labelledby="control"><h2 id="control">6. Revocación y eliminación</h2><p>El usuario puede retirar el permiso desde las <a href="https://myaccount.google.com/connections">conexiones de su cuenta de Google</a>. Al revocarlo, la integración deja de poder renovar su acceso a Drive.</p><p>Para eliminar los datos locales, puede quitar la conexión guardada de rclone, limpiar su caché y eliminar los datos de la instalación de Jellyfin y Megalodon que corresponda. Estas acciones son independientes de la eliminación de los archivos originales en Google Drive.</p><p>Para consultas sobre acceso, conservación o eliminación de datos del proyecto, escribe a <a href="mailto:antonyoandrei@gmail.com">antonyoandrei@gmail.com</a>.</p></section>
+      <section aria-labelledby="cambios"><h2 id="cambios">7. Cambios en esta política</h2><p>Los cambios en el tratamiento de datos se reflejarán en esta página y en su fecha de actualización. Un cambio de permisos de Google requerirá la autorización correspondiente del usuario.</p></section>
+    </div>
+  </main>
+  <footer class="footer wrap"><span>Megalodon · Proyecto personal</span><a href="./">Inicio</a><span>Sin afiliación con Google ni Jellyfin.</span></footer>
+</body>
+</html>
